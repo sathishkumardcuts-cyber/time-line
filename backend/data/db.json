@@ -1,0 +1,20 @@
+{
+  "users": [
+    { "id": "u-admin", "name": "Priya Admin", "email": "admin@pulsedesk.test", "role": "admin", "employeeId": "EMP-001", "department": "Operations", "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop", "passwordHash": "$2a$10$71Q6GxmFqX0zK2pWnLSXAO3MMjfV5XU6ERlFnY.cB30XksE61OzZm", "active": true },
+    { "id": "u-employee", "name": "Aarav Sharma", "email": "employee@pulsedesk.test", "role": "employee", "employeeId": "EMP-102", "department": "Engineering", "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop", "passwordHash": "$2a$10$71Q6GxmFqX0zK2pWnLSXAO3MMjfV5XU6ERlFnY.cB30XksE61OzZm", "active": true }
+  ],
+  "employees": [
+    { "id": "emp-001", "userId": "u-admin", "name": "Priya Admin", "employeeId": "EMP-001", "department": "Operations", "project": "Enterprise PMO", "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop", "active": true },
+    { "id": "emp-102", "userId": "u-employee", "name": "Aarav Sharma", "employeeId": "EMP-102", "department": "Engineering", "project": "Client Portal", "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop", "active": true },
+    { "id": "emp-203", "userId": "u-maya", "name": "Maya Chen", "employeeId": "EMP-203", "department": "Design", "project": "Mobile UX", "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop", "active": true }
+  ],
+  "timesheets": [
+    { "id": "ts-1", "userId": "u-employee", "employeeId": "EMP-102", "date": "2026-07-03", "task": "API integration", "project": "Client Portal", "hours": 7.5, "breakTime": 0.5, "comments": "Connected dashboard metrics to backend endpoints.", "status": "pending", "createdAt": "2026-07-03T09:00:00.000Z", "updatedAt": "2026-07-03T09:00:00.000Z" },
+    { "id": "ts-2", "userId": "u-admin", "employeeId": "EMP-001", "date": "2026-07-03", "task": "Monthly approvals", "project": "Enterprise PMO", "hours": 6, "breakTime": 1, "comments": "Reviewed pending weekly submissions.", "status": "approved", "createdAt": "2026-07-03T10:00:00.000Z", "updatedAt": "2026-07-03T10:00:00.000Z" }
+  ],
+  "attendance": [
+    { "id": "att-1", "employeeId": "EMP-102", "date": "2026-07-03", "status": "present", "checkIn": "09:30", "checkOut": "18:30" },
+    { "id": "att-2", "employeeId": "EMP-203", "date": "2026-07-03", "status": "leave", "checkIn": "", "checkOut": "" }
+  ],
+  "settings": { "companyName": "PulseDesk IT Services", "theme": "dark", "departments": ["Engineering", "Design", "QA", "Operations"], "projects": ["Client Portal", "Mobile UX", "Enterprise PMO", "Security Audit"] }
+}

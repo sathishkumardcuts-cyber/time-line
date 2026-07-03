@@ -1,0 +1,11 @@
+{
+  "name": "enterprise-timesheet-management-system",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "check": "node --check backend/src/server.js && node --check frontend/src/main.js"
+  }
+}
